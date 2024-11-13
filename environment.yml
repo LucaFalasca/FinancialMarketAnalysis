@@ -1,0 +1,13 @@
+# NOTE: *must* import with:
+#
+# conda env create -f ./environment.yml -p ./.conda/mf 
+#
+# command must be launched in the main folder.
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - ipykernel
+  - yfinance
+  - pandas
+  - numpy
