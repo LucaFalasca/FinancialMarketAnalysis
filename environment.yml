@@ -11,3 +11,6 @@ dependencies:
   - yfinance
   - pandas
   - numpy
+  - beautifulsoup4
+  - matplotlib
+    
