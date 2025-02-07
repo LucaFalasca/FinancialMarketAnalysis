@@ -1,3 +1,9 @@
 stocks/
 shares/
 .conda/
+docs/*
+!docs/slides.pdf
+!docs/slides.tex
+!docs/images/
+!docs/unislides.sty
+domande
