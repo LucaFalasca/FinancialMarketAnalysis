@@ -211,17 +211,108 @@
 
 \subsection{Capital Market Line}
 \begin{frame}{\subsecname}
-	%TODO
+	La capital market line è una retta che collega il rendimento privo di rischio con il portafoglio tangente.
+	I portafogli sulla capital market line sono una combinazione lineare tra il portafoglio tangente e il titolo privo di rischio. Dove il rendimento atteso del portafoglio è dato da
+	\[
+		r_a = \alpha \overline{r}_T + (1 - \alpha) r_0
+	\]
+
+	e il rischio assegnato del portafoglio è data da
+	\[
+		\sigma_a^2 = \alpha^2 \sigma_T^2 
+	\]
+\end{frame}
+
+\begin{frame}{\subsecname}
+	Andando a variare \(\alpha\) in è possibile notare come si dispongono i portafogli sulla retta. \\
+	\vspace{-0.6cm}
+	\begin{minipage}{0.65\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{images/Daily2.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.30\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{images/Weekly2.png}
+		\includegraphics[width=0.95\linewidth]{images/Monthly2.png}
+	\end{minipage} \\ \\ \\
+	Quando \(\alpha>1\), significa che bisogna vendere allo scoperto dei bond (prendere in prestito dei soldi) per investirli nel portafoglio tangente.
 \end{frame}
 
 \subsection{Test CAPM hypotesys}
 \begin{frame}{\subsecname}
-	%TODO
+	Secondo il CAPM il portafoglio tangente coincide con il portafoglio di mercato, ossia con il portafoglio
+i cui pesi sono dati dalla capitalizzazione relativa dei titoli che compongono il mercato in rapporto alla
+capitalizzazione dell'intero mercato. \\
+
+Ipotizzando un mercato composto solo dai 5 titoli considerati, possiamo verificare empiricamente che il portafoglio tangente coincida con il portafoglio di mercato scegliendo i pesi con
+\[
+w_m = \frac{K_m}{K}
+\]
+
+dove \(K_m\) è la capitalizzazione di mercato media del titolo \(m\) nel periodo considerato e \(K = \sum_{m=1}^{M} K_m\)
+\end{frame}
+
+\begin{frame}{\subsecname}
+	Ho inserito anche un ulteriore portafoglio, il portafoglio equamente pesato come benchmark aggiuntivo. \\ \\
+	In questo caso i pesi sono dati da
+\[
+w_m = \frac{1}{M}
+\]
+\end{frame}
+
+\begin{frame}{\subsecname}
+	Nel caso giornaliero il portafoglio tangente coincide quasi perfettamente sia con il portafoglio di mercato che con quello equamente pesato
+	\begin{center}
+		\begin{minipage}{0.8\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{images/Daily Tangent wallet vs Equally weighted wallet vs CAPM wallet.png}
+		\end{minipage}
+	\end{center}
+\end{frame}
+
+\begin{frame}{\subsecname}
+	Nei casi settimanale e mensile invece c'è una leggera discrepanza tra il portafoglio tangente e il portafoglio di mercato. 
+	\begin{center}
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{images/Weekly Tangent wallet vs Equally weighted wallet vs CAPM wallet.png}
+		\end{minipage}
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{images/Monthly Tangent wallet vs Equally weighted wallet vs CAPM wallet.png}
+		\end{minipage}
+	\end{center}
+
+	Tuttavia il portafoglio equamente pesato si posiziona sempre un po' più vicino al portafoglio tangente
 \end{frame}
 
 \section{Conclusioni}
+
+\begin{frame}{Conclusioni}
+	\begin{itemize}
+		\item All'aumentare dell'orizzonte temporale, i tassi di rendimento sembrano diventare sempre più stazionari.
+		\begin{itemize}
+			\item Servirebbero ulteriori test statistici per confermare questa ipotesi
+		\end{itemize}
+		\item I risultati empirici sembrano confermare la validità del modello di Markowitz
+		\item Uguaglianza tra portafoglio tangente e portafoglio di mercato
+		\begin{itemize}
+			\item Sembra esserci una discrepanza possibilmente dovuta ai pochi titoli presi in considerazione
+			\item Il portafoglio equamente pesato come portafoglio di mercato sembra una ipotesi plausibile, ma da validare con ulteriori test e considerazioni teoriche.
+		\end{itemize}
+	\end{itemize}	
+\end{frame}
 \begin{frame}
 	\frametitle{Grazie per l'attenzione!}
+	\begin{Huge}
+		Domande?
+	\end{Huge} 
+	\\ \\
+	Il codice è disponibile al seguente repository: \url{https://github.com/LucaFalasca/FinancialMarketAnalysis}
+	\\ \\
+	Grazie a tutti!
+	
 \end{frame}
 
 
