@@ -35,14 +35,36 @@
 			      \item Mensile
 		      \end{itemize}
 		\item Stazionarietà
-		\item CAPM
+		\item Portafoglio tangente
+		\item Capital market line
+		\item CAPM hypotesys test
+		\begin{itemize}
+			\item Portafoglio di mercato
+			\item Portafoglio equamente pesato
+		\end{itemize}
 	\end{itemize}
 
 \end{frame}
 
 \subsection{Dati e risorse tecniche}
 \begin{frame}{\subsecname}
-
+	\begin{itemize}
+		\item Il progetto è stato realizzato in Python
+		\item I dati sono stati prelevati da Yahoo Finance e da Federal Reserve Bank of St. Louis
+	\end{itemize}
+	\vspace{0.5cm}
+	\begin{minipage}{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.5\linewidth]{images/Python-logo.png}
+	\end{minipage}
+	\begin{minipage}{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/Yahoo!_Finance_logo.png}
+	\end{minipage}
+	\begin{minipage}{0.3\textwidth}
+		\centering
+		\includesvg[width=1.2\linewidth]{images/FRB-STL-WEB-blue-gold.svg}
+	\end{minipage}
 \end{frame}
 
 \section{Markowitz Model}
@@ -61,8 +83,6 @@
 		r_n \overset{\text{def}}{=} \frac{S_{n+1} - S_n}{S_n}, \quad \forall n = 1, \dots, N,
 	\]
 \end{frame}
-
-\subsection{Tassi di rendimento}
 \begin{frame}{\subsecname}
 	Nel caso giornaliero verrà utilizzato il tasso di rendimento logaritmico, perché approssima in maniera adeguata quello reale
 
