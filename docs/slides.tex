@@ -67,11 +67,29 @@
 	\end{minipage}
 \end{frame}
 
+\subsection{Contesto}
+
+\begin{frame}{\subsecname}
+	\begin{itemize}
+		\item Titoli azionari utilizzati (Top 5 Dow Jones)
+		\begin{itemize}
+			\item Apple (AAPL)
+			\item Amazon (AMZN)
+			\item Microsoft (MSFT)
+			\item JPMorgan Chase (JPM)
+			\item Walmart (WMT)
+		\end{itemize}
+		\item Intervallo temporale
+		\begin{itemize}
+			\item 2015 - 2025
+		\end{itemize}
+	\end{itemize}
+\end{frame}
 \section{Markowitz Model}
 
 \subsection{Tassi di rendimento}
 \begin{frame}{\subsecname}
-	Per stimare la volatilità $\sigma$ del tasso di rendimento $r_T$ dello stock $S$, dobbiamo ricorrere ai dati storici sullo stock. Sfruttiamo i prezzi di chiusura dello stock per un ampio intervallo di tempo passato. Denotiamo con
+	Per stimare del tasso di rendimento $r_T$ dello stock $S$ e la sua volatilità $\sigma$, dobbiamo ricorrere ai dati storici sullo stock. Sfruttiamo i prezzi di chiusura dello stock per un ampio intervallo di tempo passato. Denotiamo con
 
 	\[
 		S_1, S_2, \dots, S_N, S_{N+1},
@@ -319,7 +337,7 @@ w_m = \frac{1}{M}
 		\item Uguaglianza tra portafoglio tangente e portafoglio di mercato
 		\begin{itemize}
 			\item Sembra esserci una discrepanza possibilmente dovuta ai pochi titoli presi in considerazione
-			\item Il portafoglio equamente pesato come portafoglio di mercato sembra una ipotesi plausibile, ma da validare con ulteriori test e considerazioni teoriche.
+			\item Il portafoglio equamente pesato come approssimazione del portafoglio tangente sembra una ipotesi plausibile, ma da validare con ulteriori test e considerazioni teoriche.
 		\end{itemize}
 	\end{itemize}	
 \end{frame}
