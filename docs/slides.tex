@@ -219,10 +219,17 @@
 \end{frame}
 
 \begin{frame}{\subsecname}
-	è possibile tracciare una retta tangente con il portafoglio tangente, ovvero il portafoglio che massimizza il rapporto rendimento-rischio. \\
-	\vspace{-0.6cm}
+	è possibile tracciare una retta tangente con il portafoglio tangente, ovvero il portafoglio che massimizza il rapporto di Sharpe. \\
+	\vspace{-0.4cm}
+	\[
+		\max_{(w_1, \dots, w_M) \in \mathbb{H} \cap \mathbb{K}_+} \tan(\theta) =
+		\max_{(w_1, \dots, w_M) \in \mathbb{H} \cap \mathbb{K}_+} 
+		\frac{\sum_{m=1}^{M} w_m (\bar{r}_m - r_0)}
+		{\left( \sum_{\ell, m=1}^{M} \sigma_{\ell, m} w_{\ell} w_m \right)^{1/2}},
+	\]
+	
 	\begin{center}
-		\begin{minipage}{0.8\textwidth}
+		\begin{minipage}{0.6\textwidth}
 			\centering
 			\includegraphics[width=1\linewidth]{images/Daily Efficient Frontier vs Daily Feasible Portfolios.png}
 		\end{minipage}
